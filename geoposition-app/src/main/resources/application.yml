@@ -1,0 +1,40 @@
+spring:
+  application:
+    name: geoposition-service
+  datasource:
+    url: jdbc:postgresql://127.0.0.1:5419/dregnersen-news
+    username: postgres
+    password: postgres
+  jpa:
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
+        ddl-auto: none
+        format_sql: true
+
+      javax:
+        persistence:
+          validation:
+            mode: none
+  cloud:
+    loadbalancer:
+      ribbon:
+        enabled: true
+springdoc:
+  swagger-ui.disable-swagger-default-url: true
+
+eureka:
+  instance:
+    appname: geoposition-service
+    leaseRenewalIntervalInSeconds: 5
+    lease-expiration-duration-in-seconds: 5
+  client:
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: //
+    registryFetchIntervalSeconds: 5
+    healthcheck:
+      enabled: true
+
