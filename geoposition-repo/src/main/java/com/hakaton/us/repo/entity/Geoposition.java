@@ -10,7 +10,7 @@ import javax.persistence.*;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "news")
+@Table(name = "geo")
 public class Geoposition {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

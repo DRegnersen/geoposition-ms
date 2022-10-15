@@ -7,7 +7,7 @@ import io.swagger.v3.oas.annotations.parameters.RequestBody;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-@RestController("/app")
+@RestController("/geo")
 public class GeopositionController {
     private final GeopositionService geopositionService;
 
