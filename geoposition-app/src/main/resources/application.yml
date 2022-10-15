@@ -2,7 +2,7 @@ spring:
   application:
     name: geoposition-service
   datasource:
-    url: jdbc:postgresql://127.0.0.1:5419/dregnersen-news
+    url: jdbc:postgresql://127.0.0.1:5419/stepanova-news
     username: postgres
     password: postgres
   jpa:
